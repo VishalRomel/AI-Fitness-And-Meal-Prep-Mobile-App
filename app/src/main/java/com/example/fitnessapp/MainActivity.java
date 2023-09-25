@@ -15,11 +15,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickLog(View v){
+
+
+
         // When User Clicks login
-
         Intent i = new Intent(this, UserPhysicalInfo.class);
-        startActivity(i);
 
+        startActivity(i);
 
     }
 
