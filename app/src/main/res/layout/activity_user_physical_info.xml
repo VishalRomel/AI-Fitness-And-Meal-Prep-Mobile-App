@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#061634"
     tools:context=".UserPhysicalInfo">
 
     <ImageView
@@ -30,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton26"
+        android:id="@+id/Height"
         android:layout_width="163dp"
         android:layout_height="197dp"
         android:layout_marginStart="16dp"
@@ -39,14 +38,14 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:clickable="true"
-        app:backgroundTint="#48DAFA"
+        android:onClick="Extend"
         app:layout_constraintEnd_toStartOf="@+id/divider2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton28"
+        app:layout_constraintTop_toBottomOf="@+id/Gender"
         tools:srcCompat="@tools:sample/avatars" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton28"
+        android:id="@+id/Gender"
         android:layout_width="163dp"
         android:layout_height="197dp"
         android:layout_marginStart="16dp"
@@ -55,14 +54,13 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:clickable="true"
+        android:onClick="GenderSelector"
         android:src="@drawable/_f47d79de700bd0004bb5e2d"
-        app:backgroundTint="#48DAFA"
         app:fabSize="auto"
         app:layout_constraintEnd_toStartOf="@+id/divider2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:maxImageSize="100dp"
-        app:useCompatPadding="false"
         tools:srcCompat="@tools:sample/avatars" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -75,14 +73,14 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:clickable="true"
-        app:backgroundTint="#48DAFA"
+        android:onClick="Extend"
         app:layout_constraintEnd_toStartOf="@+id/divider2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton26"
+        app:layout_constraintTop_toBottomOf="@+id/Height"
         tools:srcCompat="@tools:sample/avatars" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton22"
+        android:id="@+id/Age"
         android:layout_width="163dp"
         android:layout_height="197dp"
         android:layout_marginStart="16dp"
@@ -92,8 +90,8 @@
         android:layout_marginRight="16dp"
         android:background="#48DAFA"
         android:clickable="true"
+        android:onClick="Extend"
         android:tint="#000000"
-        app:backgroundTint="#48DAFA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent"
@@ -109,14 +107,14 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:clickable="true"
-        app:backgroundTint="#48DAFA"
+        android:onClick="Extend"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/divider2"
-        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton27"
+        app:layout_constraintTop_toBottomOf="@+id/Weight"
         tools:srcCompat="@tools:sample/avatars" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton27"
+        android:id="@+id/Weight"
         android:layout_width="163dp"
         android:layout_height="197dp"
         android:layout_marginStart="16dp"
@@ -125,10 +123,10 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:clickable="true"
-        app:backgroundTint="#48DAFA"
+        android:onClick="Extend"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/divider2"
-        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton22"
+        app:layout_constraintTop_toBottomOf="@+id/Age"
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
